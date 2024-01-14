@@ -12,7 +12,7 @@ public class Hash {
         }
     }
 
-    public void showTable() {
+    public Object showTable() {
         System.out.println("\n================ TABELA HASH ================");
         if (this.tabelaHash == null) {
             System.out.println("Tabela Vazia");
@@ -30,6 +30,7 @@ public class Hash {
 
         System.out.println("=============================================");
 
+        return null;
     }
 
     public void destroyTable() {

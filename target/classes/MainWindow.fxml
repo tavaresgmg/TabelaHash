@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.MainWindowController">
+    <VBox alignment="CENTER" spacing="20">
+
+        <!-- Caixa de texto para inserir dados -->
+        <TextField fx:id="textFieldKey" promptText="Chave"/>
+        <TextField fx:id="textFieldValue" promptText="Valor"/>
+
+        <!-- Botões de operações -->
+        <HBox spacing="10">
+            <Button text="Inserir" onAction="#handleInserir"/>
+            <Button text="Buscar" onAction="#handleBuscar"/>
+            <Button text="Remover" onAction="#handleRemover"/>
+        </HBox>
+
+        <!-- Caixa de retorno -->
+        <Label fx:id="labelRetorno"/>
+
+    </VBox>
+</AnchorPane>
